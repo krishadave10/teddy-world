@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Contact Us</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <nav>
-    <h2>🧸 Teddy World</h2>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Toys</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+<h2>🧸 Teddy World</h2>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Toys</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
 </nav>
 
-    <h1 class="page-title">Contact Us</h1>
+<h1 class="page-title">Contact Us</h1>
 
 <p class="content">
-    We’d love to hear from you! 💕  
-    Have a question, feedback, or just want to say hello?  
-    Send us a message and we’ll reply with a smile 😊🧸
+We’d love to hear from you! 💕  
+Have a question, feedback, or just want to say hello?  
+Send us a message and we’ll reply with a smile 😊🧸
 </p>
 
 <div class="contact-box">
-    <form>
-        <label>👤 Your Name</label>
-        <input type="text" placeholder="Enter your sweet name" required>
 
-        <label>📧 Your Email</label>
-        <input type="email" placeholder="Enter your email address" required>
+<form onsubmit="showMessage(event)">
 
-        <label>💌 Your Message</label>
-        <textarea placeholder="Write your lovely message here..." rows="4" required></textarea>
+<label>👤 Your Name</label>
+<input type="text" placeholder="Enter your sweet name" required>
 
-        <button type="submit">✨ Send Message ✨</button>
-    </form>
+<label>📧 Your Email</label>
+<input type="email" placeholder="Enter your email address" required>
+
+<label>💌 Your Message</label>
+<textarea placeholder="Write your lovely message here..." rows="4" required></textarea>
+
+<button type="submit">✨ Send Message ✨</button>
+
+</form>
+
 </div>
 
 <p class="content">
-    📧 teddyworld@gmail.com <br>
-    📞 +91 98765 43210 <br>
-    📍 Made with love for teddy lovers everywhere 🐻💖
+📧 teddyworld@gmail.com <br>
+📞 +91 98765 43210 <br>
+📍 Made with love for teddy lovers everywhere 🐻💖
 </p>
+
+<script>
+
+function showMessage(event){
+
+event.preventDefault();
+
+alert("💖 Thank you for your lovely message!\n\nOur Teddy World team will reply soon 🧸✨");
+
+}
+
+</script>
+
 </body>
 </html>
-
-
