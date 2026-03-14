@@ -730,3 +730,14 @@ height:170px;
 object-fit:cover;
 border-radius:10px;
 }
+@media(max-width:900px){
+.featured .toy-container{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:500px){
+.featured .toy-container{
+grid-template-columns:1fr;
+}
+}
