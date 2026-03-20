@@ -2,23 +2,47 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Contact Us</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Teddy World | Soft Toy Store India</title>
+
+<meta name="description" content="Contact Teddy World for soft toys, teddy bears, and plush toys. Get in touch for orders, support, or queries.">
+
+<meta name="keywords" content="contact teddy world, toy store contact, plush toys support, teddy bear shop India">
+
+<meta name="author" content="Teddy World">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Contact Teddy World">
+<meta property="og:description" content="Get in touch with Teddy World for cute soft toys">
+<meta property="og:image" content="images/k1.jpg">
+<meta property="og:type" content="website">
+
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/favicon.ico">
+
 </head>
 
 <body>
 
+<!-- HEADER -->
+<header>
 <nav>
 <h2>🧸 Teddy World</h2>
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="products.html">Toys</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><a href="index.html" title="Home Page">Home</a></li>
+<li><a href="products.html" title="View Toys">Toys</a></li>
+<li><a href="about.html" title="About Teddy World">About</a></li>
+<li><a href="contact.html" title="Contact Teddy World">Contact</a></li>
 </ul>
 </nav>
+</header>
 
-<h1 class="page-title">Contact Us</h1>
+<!-- MAIN -->
+<main>
+
+<h1 class="page-title">Contact Teddy World</h1>
 
 <p class="content">
 We’d love to hear from you! 💕  
@@ -30,14 +54,14 @@ Send us a message and we’ll reply with a smile 😊🧸
 
 <form onsubmit="showMessage(event)">
 
-<label>👤 Your Name</label>
-<input type="text" placeholder="Enter your sweet name" required>
+<label for="name">👤 Your Name</label>
+<input type="text" id="name" name="name" placeholder="Enter your sweet name" required>
 
-<label>📧 Your Email</label>
-<input type="email" placeholder="Enter your email address" required>
+<label for="email">📧 Your Email</label>
+<input type="email" id="email" name="email" placeholder="Enter your email address" required>
 
-<label>💌 Your Message</label>
-<textarea placeholder="Write your lovely message here..." rows="4" required></textarea>
+<label for="message">💌 Your Message</label>
+<textarea id="message" name="message" placeholder="Write your lovely message here..." rows="4" required></textarea>
 
 <button type="submit">✨ Send Message ✨</button>
 
@@ -46,28 +70,37 @@ Send us a message and we’ll reply with a smile 😊🧸
 </div>
 
 <p class="content">
-📧 teddyworld@gmail.com <br>
-📞 +91 98765 43210 <br>
-📍 Made with love for teddy lovers everywhere 🐻💖
+📧 <a href="mailto:teddyworld@gmail.com">teddyworld@gmail.com</a><br>
+📞 <a href="tel:+919876543210">+91 98765 43210</a><br>
+📍 India | Made with love for teddy lovers 🐻💖
 </p>
 
-<script>
+</main>
 
-function showMessage(event){
-
-event.preventDefault();
-
-alert("💖 Thank you for your lovely message!\n\nOur Teddy World team will reply soon 🧸✨");
-
+<!-- SCHEMA MARKUP -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "ContactPage",
+ "name": "Contact Teddy World",
+ "email": "teddyworld@gmail.com",
+ "telephone": "+91 9876543210",
+ "areaServed": "India"
 }
+</script>
 
+<!-- SCRIPT -->
+<script>
+function showMessage(event){
+event.preventDefault();
+alert("💖 Thank you for your lovely message!\n\nOur Teddy World team will reply soon 🧸✨");
+}
 </script>
 
 <!-- FOOTER -->
 <footer>
-
 <p>© 2026 Teddy World | Soft Toy Store</p>
-
 </footer>
+
 </body>
 </html>
